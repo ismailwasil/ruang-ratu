@@ -52,18 +52,18 @@ if (appsGrid) {
   const apps = [
     {
       name: "UHC SMART",
-      url: "https://mail.google.com",
-      icon: "fa-solid fa-envelope",
+      url: "https://docs.google.com/spreadsheets/d/1ZurvJPdQcg447ESRXNT74KcMNjfrrmIHV4Qeq0JITB0/edit?gid=1985560627#gid=1985560627",
+      icon: "fa-solid fa-group-arrows-rotate",
     },
     {
       name: "Tingkepan",
       url: "https://drive.google.com",
-      icon: "fa-brands fa-google-drive",
+      icon: "fa-solid fa-shower",
     },
     {
       name: "Wedding Ratu & Ismail",
       url: "https://notion.so",
-      icon: "fa-solid fa-note-sticky",
+      icon: "fa-solid fa-restroom",
     },
     {
       name: "my Archive",
