@@ -23,12 +23,13 @@ if (liveClock) {
       weekday: "long",
       day: "numeric",
       month: "long",
+      year: "numeric",
     });
     const jam = now.toLocaleTimeString("id-ID", {
       hour: "2-digit",
       minute: "2-digit",
     });
-    liveClock.textContent = `${tanggal} — ${jam}`;
+    liveClock.textContent = `${tanggal} — ${jam}` + " WIB";
   }
   updateClock();
   setInterval(updateClock, 1000 * 30);
