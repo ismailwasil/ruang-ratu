@@ -1,3 +1,19 @@
+// PENTING, mencegah Klik kanan
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
+
+document.addEventListener("keydown", function (event) {
+  if (
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && ["I", "J", "C"].includes(event.key)) ||
+    (event.ctrlKey && event.key === "u")
+  ) {
+    event.preventDefault();
+  }
+});
+// /PENTING, mencegah Klik kanan
+
 /* =========================================================
    0. NAVBAR: tutup menu mobile Bootstrap saat sebuah link diklik
    ========================================================= */
@@ -53,26 +69,31 @@ if (appsGrid) {
   const apps = [
     {
       name: "UHC SMART",
+      idApp: "",
       url: "https://docs.google.com/spreadsheets/d/1ZurvJPdQcg447ESRXNT74KcMNjfrrmIHV4Qeq0JITB0/edit?gid=1985560627#gid=1985560627",
       icon: "fa-solid fa-group-arrows-rotate",
     },
     {
       name: "Tingkepan",
+      idApp: "tingkepan",
       url: "https://drive.google.com",
       icon: "fa-solid fa-shower",
     },
     {
       name: "Wedding Ratu & Ismail",
+      idApp: "wedding",
       url: "https://notion.so",
       icon: "fa-solid fa-restroom",
     },
     {
       name: "my Archive",
+      idApp: "myArchive",
       url: "https://github.com",
       icon: "fa-brands fa-google-drive",
     },
     {
       name: "YouTube",
+      idApp: "youtube",
       url: "https://www.youtube.com/@ratuismailTV",
       icon: "fa-brands fa-youtube",
     },
@@ -82,7 +103,7 @@ if (appsGrid) {
     const col = document.createElement("div");
     col.className = "col-6 col-md-4 col-lg-3";
     col.innerHTML = `
-      <a class="app-btn" href="${app.url}" target="_blank" rel="noopener noreferrer">
+      <a class="app-btn" href="${app.url}" target="_blank" id="${app.idApp}" rel="noopener noreferrer">
         <i class="${app.icon}" aria-hidden="true"></i><span>${app.name}</span>
       </a>`;
     appsGrid.appendChild(col);
