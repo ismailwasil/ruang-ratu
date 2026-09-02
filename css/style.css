@@ -41,6 +41,12 @@ code {
   color: var(--brass-strong);
 }
 
+/* agar tag a tidak bergaris */
+a {
+  text-decoration: none;
+}
+/* /agar tag a tidak bergaris */
+
 .text-brass {
   color: var(--brass);
 }
