@@ -37,8 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
             <li class="nav-item"><a class="nav-link" href="dokumen.html">Dokumen</a></li>
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="aplikasi.html">Aplikasi</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="index.html#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
           </ul>
         </div>
       </div>
@@ -94,6 +93,48 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Password untuk aplikasi tertentu
+      const protectedApps = {
+        'myArchive': 'hanyaIsmailyangtahu',
+        'wedding': '190323'
+      };
+
+      // Ambil semua tombol aplikasi
+      document.querySelectorAll('.app-btn').forEach(function (app) {
+
+        app.addEventListener('click', function (e) {
+
+          const appId = this.id;
+
+          // Jika aplikasi tidak memiliki password, lanjutkan seperti biasa
+          if (!protectedApps.hasOwnProperty(appId)) {
+            return;
+          }
+
+          // Cegah link langsung terbuka
+          e.preventDefault();
+
+          // Minta password
+          const password = prompt('Masukkan password:');
+
+          // Jika password benar
+          if (password === protectedApps[appId]) {
+            window.open(this.href, '_blank');
+          }
+          // Jika password salah
+          else if (password !== null) {
+            alert('Password salah');
+          }
+
+        });
+
+      });
+
+    });
+  </script>
 </body>
 
 </html>
