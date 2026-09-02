@@ -48,7 +48,7 @@
   <main class="flex-grow-1">
 
     <!-- HERO -->
-    <section class="hero-section">
+    <!-- <section class="hero-section">
       <div class="container py-5">
         <p class="hero-clock" id="liveClock" aria-live="off"></p>
         <h1 class="hero-title">Satu halaman untuk dokumen dan aplikasi yang saya pakai tiap hari.</h1>
@@ -59,6 +59,35 @@
         <div class="d-flex flex-wrap gap-3 mt-4">
           <a href="dokumen.html" class="btn btn-primary btn-lg px-4">Buka dokumen</a>
           <a href="aplikasi.html" class="btn btn-outline-primary btn-lg px-4">Lihat aplikasi</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="hero-section hero-section-split mt-4">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <p class="hero-clock" id="liveClock" aria-live="off"></p>
+            <h1 class="hero-title mt-3">Hai, saya <span class="hero-name">Ratu</span></h1>
+            <p class="hero-role">Petugas Rawat Inap &middot; RS SMART</p>
+            <p class="hero-desc">
+              Buka dan ubah catatan berbentuk dokumen, lalu lompat ke aplikasi lain
+              yang biasa saya gunakan — semuanya tanpa harus mencari-cari tab.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="dokumen.html" class="btn btn-primary btn-lg px-4">Buka dokumen</a>
+              <a href="aplikasi.html" class="btn btn-outline-primary btn-lg px-4">Lihat aplikasi</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="hero-photo-wrap">
+              <img src="assets/img/Professional_profil_round.png" alt="Foto profil" class="hero-photo" />
+              <span class="hero-photo-tag"><i class="fa-solid fa-star" aria-hidden="true"></i> Halaman Pribadi</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -108,9 +137,13 @@
         <div class="avatar" aria-hidden="true"><img src="assets/img/Professional_profil_round.png" alt="RR"></div>
         <div class="about-text">
           <p>
-            Ini adalah halaman pribadi sederhana — tempat menyimpan catatan berbentuk tabel dan
-            pintasan ke aplikasi yang biasa dipakai, tanpa server dan tanpa akun. Semua data
-            tabel disimpan di peramban perangkat ini.
+            Ini adalah halaman pribadi sederhana — tempat menyimpan <span
+              style="color:var(--brass-strong)">catatan</span> dan <span style="color:var(--brass-strong)">arsip
+              pribadi</span> berbentuk video, gambar, dan dokumen baik untuk keperluan <span
+              style="color:var(--brass-strong)">pribadi</span> maupun <span
+              style="color:var(--brass-strong)">pekerjaan</span> dan
+            pintasan ke aplikasi yang biasa saya pakai. <br> Semua data maupun dokumen disimpan di peramban perangkat
+            ini.
           </p>
           <p class="about-edit-hint">
             ❤
@@ -124,7 +157,7 @@
   <footer class="site-footer border-top mt-3">
     <div class="footer-bottom border-top">
       <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
-        <p class="mb-0 small text-body-secondary">&copy; <span id="year"></span> Crafted with ❤️ by <strong
+        <p class="mb-0 small text-body-secondary">&copy; <span id="year"></span> Created with ❤️ by <strong
             style="color:var(--brass-strong)">Ismail</strong> · IT Programmer
         </p>
 
