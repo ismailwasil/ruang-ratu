@@ -51,6 +51,11 @@ a {
   color: var(--brass);
 }
 
+.text-brass-strong {
+  color: var(--brass);
+  font-weight: bolder;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;
