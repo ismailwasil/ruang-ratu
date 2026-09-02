@@ -68,27 +68,33 @@ const appsGrid = document.getElementById("appsGrid");
 if (appsGrid) {
   const apps = [
     {
+      name: "ASYRAF Doc",
+      idApp: "asyraf",
+      url: "https://drive.google.com/drive/folders/1qEd-fjEvx6R5_0SWGpk9cSuOg27SBoAI",
+      icon: "fa-solid fa-child",
+    },
+    {
       name: "UHC SMART",
-      idApp: "",
-      url: "https://docs.google.com/spreadsheets/d/1ZurvJPdQcg447ESRXNT74KcMNjfrrmIHV4Qeq0JITB0/edit?gid=1985560627#gid=1985560627",
+      idApp: "UHC",
+      url: "https://docs.google.com/spreadsheets/d/1ZurvJPdQcg447ESRXNT74KcMNjfrrmIHV4Qeq0JITB0",
       icon: "fa-solid fa-group-arrows-rotate",
     },
     {
       name: "Tingkepan",
       idApp: "tingkepan",
-      url: "https://drive.google.com",
+      url: "https://drive.google.com/drive/folders/1Ws5-WJR8fZJr9HmqcpoX99HcL75WEJsY",
       icon: "fa-solid fa-shower",
     },
     {
       name: "Wedding Ratu & Ismail",
       idApp: "wedding",
-      url: "https://notion.so",
+      url: "https://drive.google.com/drive/folders/1MsqWlcD3ilybI25UlUW2X6SkJ5__XICo",
       icon: "fa-solid fa-restroom",
     },
     {
       name: "my Archive",
       idApp: "myArchive",
-      url: "https://github.com",
+      url: "https://drive.google.com/drive/folders/1P5x-SI8UBZ69mpsiUYDI1Tv3pbDRDeZs",
       icon: "fa-brands fa-google-drive",
     },
     {
